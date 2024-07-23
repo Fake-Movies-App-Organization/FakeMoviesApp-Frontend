@@ -11,18 +11,19 @@ function App() {
   };
 
   return (
-    <div id="app" className="h-screen bg-red-300">
-      {isLogged ? <MainRouter /> : <AuthRouter />}
-      {!isLogged && (
-        <button
-          onClick={handleLogin}
-          className="bg-red-500 text-white p-2 rounded"
-        >
-          Go to app simulate xd
-        </button>
-      )}
+    <div id="app" className="h-screen">
+      <AuthRouter/>
     </div>
   );
 }
 
 export default App;
+{
+  /*       {!isLogged && (
+        <button
+          onClick={handleLogin}
+          className="bg-red-500 text-white p-2 rounded"
+        >
+          Go to app simulate xd
+        </button> */
+}
