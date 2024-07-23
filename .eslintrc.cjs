@@ -12,7 +12,8 @@ module.exports = {
   rules: {
     // Desactiva la regla que prohíbe el uso de "target=_blank" en JSX
     'react/jsx-no-target-blank': 'off',
-    'no-unused-vars': 'off',
+    'no-unused-vars': 'warn',
+    '@typescript-eslint/no-unused-vars': 'warn', // Cambia de error a advertencia
     'react/prop-types': 'off',
     // Configuración específica para react-refresh
     'react-refresh/only-export-components': [
