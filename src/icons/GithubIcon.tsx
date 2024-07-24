@@ -3,7 +3,7 @@ interface GithubIconProps {
 }
 
 export const GithubIcon = ({ size }: GithubIconProps) => {
-  console.log(size);
+  
   return (
     <svg
       viewBox="0 0 24 24"
