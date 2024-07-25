@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { Header } from '../public/Header/Header';
-import { Footer } from '../public/Footer/Footer';
 import { HomePage } from '../pages/Main/HomePage/HomePage';
 import { ProfilePage } from '../pages/Main/ProfilePage/ProfilePage';
+import { Header } from '../components/Header/Header';
+import { Footer } from '../components/Footer/Footer';
 
 const MainRouter = () => {
   return (

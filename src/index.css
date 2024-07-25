@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -54,7 +56,7 @@ html{
   top: 0;
   transform: translateY(-50%);
   font-size: 1rem;
-  margin-left: -1px;
+  margin-left: -1.5px;
   font-weight: 400;
   color: #aaa;
 }
@@ -94,4 +96,16 @@ html{
 .embla__slide img {
   height: 100%;
   width: 100%; /* Si también quieres que las imágenes ocupen todo el ancho */
+}
+
+.container-footer {
+  width: 90%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.container-section {
+  width: 90%;
+  max-width: 1450px;
+  margin-inline: auto;
 }

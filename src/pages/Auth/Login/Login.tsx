@@ -12,8 +12,7 @@ export const Login = () => {
   const navigate = useNavigate();
 
   const navigateTo = (path: string) => {
-
-    navigate(`/${path}`)
+    navigate(`/${path}`);
   };
 
   return (
@@ -29,7 +28,7 @@ export const Login = () => {
           <form className="mt-10 w-full flex flex-col gap-8">
             <div className="flex h-full items-stretch">
               <div className="input-container">
-                <input  
+                <input
                   className="input-field bg-transparent font-medium text-lg outline-none py-2.5 border-b-2 w-full pr-3"
                   placeholder=" "
                   type="email"

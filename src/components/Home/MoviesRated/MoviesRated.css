@@ -1,0 +1,45 @@
+.movies-rated-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, auto);
+  gap: 3rem;
+}
+
+.movies-rated-container figure {
+  position: relative;
+}
+
+.movies-rated-container article figure > div {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0  15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.movies-rated-container button {
+  position: relative;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.3), 7px 0 10px rgba(0, 0, 0, 0.22);
+  background: linear-gradient(to top, #9b4c10, #FFA41B);
+}
+
+.movies-rated-container .card {
+  position: relative;
+  cursor: pointer;
+}
+
+.movies-rated-container .card img {
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.movies-rated-container .card:hover img {
+  transform: scale(1.15);
+}
+
+.movies-rated-container article figure::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}

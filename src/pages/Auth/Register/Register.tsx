@@ -124,7 +124,7 @@ export const Register = () => {
                   className="font-medium text-slate-200 cursor-pointer hover:text-slate-50"
                   onClick={() => navigateTo()}
                 >
-                  Register
+                  Log In
                 </span>
               </p>
             </form>

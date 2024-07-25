@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div id="app" className="h-screen">
-      <AuthRouter/>
+      <MainRouter/>
     </div>
   );
 }
