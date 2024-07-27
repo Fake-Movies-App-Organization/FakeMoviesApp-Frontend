@@ -11,7 +11,7 @@ function App() {
   };
 
   return (
-    <div id="app" className="h-screen">
+    <div id="app" className="min-h-screen">
       <MainRouter/>
     </div>
   );

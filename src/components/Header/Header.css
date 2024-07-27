@@ -1,0 +1,41 @@
+.search {
+  display: inline-flex;
+  align-items: center;
+  background-color: #161A30;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e3e3e336;
+}
+
+.search :is(input, button) {
+  color: inherit;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.search__input {
+  width: 0;
+  transition: width 0.5s;
+}
+
+.search__button {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.search__button:hover {
+  color: #e3e3e3;
+}
+
+.search:focus-within input {
+  width: 180px;
+}
+
+::placeholder {
+  font: inherit;
+  color: white;
+}

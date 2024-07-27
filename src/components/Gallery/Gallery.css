@@ -1,0 +1,41 @@
+.gallery-container {
+  container-name: gallery;
+  container-type: inline-size;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@container gallery (max-width: 575px) {
+  .movie-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container gallery (min-width: 576px) and (max-width: 899px) {
+  .movie-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container gallery (min-width: 900px) {
+  .movie-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.image-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0;
+  border-radius: 6px;
+}
+
+.card:hover .image-container::after {
+  opacity: 0.50;
+}

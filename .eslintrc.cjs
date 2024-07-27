@@ -16,6 +16,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'warn', // Cambia de error a advertencia
     'react/prop-types': 'off',
     // Configuración específica para react-refresh
+    "react-hooks/exhaustive-deps": 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
